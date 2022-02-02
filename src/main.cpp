@@ -18,6 +18,7 @@ Choices:
 [*]: Stand still and do nothing.
 
 Your choice: )NengTheProtagon";
+
     char option;
     std::cin >> option;
 }
