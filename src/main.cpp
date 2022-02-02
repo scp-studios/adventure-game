@@ -7,9 +7,9 @@ static void b0();
 
 static void b00();
 
-static void b02();
-
 static void b01();
+
+static void b02();
 
 int main()
 {
