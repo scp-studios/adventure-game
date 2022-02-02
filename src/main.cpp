@@ -1,19 +1,62 @@
 #include "pch.hpp"
 
-#include "messages.hpp"
 #include "utilities.hpp"
 
-static void b0();
+#include "main.hpp"
 
-static void b00();
+static const std::string_view startingMessageOne = 
+R"NengTheProtagon( Hello! Welcome to this adventure game made by Neng Li and Liangyue Zhao.
+To play this game, simply read the passages, and you will be presented with 
+varias options to choose from. To choose an option, simply type in the cha-
+racter that the option is labeled with.
 
-static void b01();
+When an option is labeled [*], it means that you can type in whatever charac-
+ter you want to choose that option. It is sometimes called the default optio-
+n.
 
-static void b02();
+Anyways, enough chitchat. Let's get into the game!
 
-static void b03();
+Press [ENTER] to continue... )NengTheProtagon";
 
-static void b04();
+static const std::string_view startingMessageTwo =
+R"NengTheProtagon(
+# So, the story began when you are visiting someone named Shiva Jay. Shiva Jay
+# is a rather wild character, and often unpredictable. This makes him the last
+# person that you would wanted to see. However, due to unforseen circumstances,
+# you have to see him.
+#     When you arrived at the house that was claimed to be his location, you k-
+# nocked on the door. A man answered.
+#     "Hi, I'm looking for Shiva Jay", you said, "Does he live here?"
+#     "Oh, I'm Shiva Jay! Nice to meet ya! What's your name?", he replied.
+#     "Uh, Tony. As in, Tony Yin."
+#     "Ah. So, what takes you here?"
+#     "I'm just searching for something. It's uh, well, I don't know what it's 
+# called, but I know what it looks like."
+#     "Ah, a treasure hunter! Anyways, you have a long journey ahead of you. W-
+# hy don't you come in for some tea?"
+
+Alright, here are your choices. In the future, this will not be just be labeled
+"Choices"
+
+[y]: Accept the tea offer made by Shiva Jay.
+[n]: Decline the tea offer made by Shiva Jay.
+
+Choose one of the above by typing in their letter: )NengTheProtagon";
+
+static const std::string_view startingDeathMessageOne =
+R"NengTheProtagon(
+Okay, so to keep things moving as fast as possible, I'm not going describe eve-
+rything in detail, so from now on they will be as fast as possible passages. T-
+his is to make the job easier for the writer and for the player reading these
+passages. Anyways, sorry for the interruption.
+
+# So, you walked into Shiva Jay's house and you accepted his tea. It tasted be-
+# tter than you originally thought. However, after drinking the tea, your stom-
+# ach starts to ache, and within seconds you pass out. It appears that the tea 
+# was poisoned
+# 
+# Anyways, you died from poison within Shiva Jay's tea. Better luck next time.
+)NengTheProtagon";
 
 int main()
 {
@@ -34,7 +77,7 @@ int main()
         return 0;
     case 'n':
         // Decline the tea offer made by Shiva Jay
-        b0();
+        scp::b0();
         break;
     default:
         // Invalid Input
@@ -42,93 +85,4 @@ int main()
         return 0;
     }
     return 0;
-}
-
-static void b0()
-{
-    std::cout << mountainHikeMainMessage;
-
-    char option;
-    std::cin >> option;
-    
-    switch (option)
-    {
-    case '1':
-        // Hike up the mountain with Shiva Jay
-        b00();
-        break;
-    case '2':
-        // Say no to hiking up the mountain with Shiva Jay
-        b01();
-        break;
-    case '3':
-        // Start running away from Shiva Jay
-        b02();
-        break;
-    case '4':
-        // Dial 911
-        b03();
-        break;
-    default:
-        // Stand still and do nothing.
-        b04();
-        break;
-    }
-}
-
-static void b00()
-{
-    std::cout << deathByGunshotOnMountainMainMessage;
-    
-    switch (utils::randint(1, 2))
-    {
-    case 1:
-        std::cout << deathByGunshotOnMountainDeathMessage1;
-        return;
-    case 2:
-        std::cout << deathByGunshotOnMountainMessage2;
-        break;
-    }
-    
-    utils::ChoiceMenu choiceMenu = {};
-    choiceMenu.title = "Choices:";
-    choiceMenu.options = {
-        { '1', "Run away from Shiva Jay." },
-        { '2', "Tackle Shiva Jay." },
-        { '*', "Stand still and do nothing." }
-    };
-    choiceMenu.prompt = "Your Choice: ";
-    
-    switch (utils::choiceMenu(choiceMenu))
-    {
-    case '1':
-        break;
-    case '2':
-        break;
-    case '3':
-        break;
-    default:
-        break;
-    }
-}
-
-static void b01()
-{
-    // So, I'll let you write the conditions for this one, which is when the p-
-    // layer refuses the hike the mountain with Shiva Jay.
-}
-
-static void b02()
-{
-    // This is when the player chooses to run away from Shiva Jay.
-}
-
-static void b03()
-{
-    // This is when the player dials 911.
-}
-
-static void b04()
-{
-    // This is when the player decides to stand still and do nothing.
 }
