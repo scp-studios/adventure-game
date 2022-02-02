@@ -7,10 +7,10 @@ int main(){
     std::cin >> teaChoice;
     switch (teaChoice)
     {
-    case "y":
+    case 'y':
         std::cout << "Oops! You got poisoned by Shiva Jay.\n";
         return 0;
-    case "n":
+    case 'n':
     default:
         break;
     }
