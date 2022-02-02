@@ -3,8 +3,8 @@
 
 void mountainHike()
 {
-    std::cout << R"NengTheProtagon("
-So, you don't like tea, eh?" said Shiva Jay.
+    std::cout << R"NengTheProtagon(
+"So, you don't like tea, eh?" said Shiva Jay.
 #"No, not really", you replied, "I'm not exactly a fan of tea. 
 #"Very well, then. You into hiking?"
 #"Well, not really. I've hiked before, but not much."
