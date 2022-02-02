@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.13)
 project("Adventure Game")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
+set(CMAKE_CXX_STANDARD 17)
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     add_compile_options("-fdiagnostics-absolute-paths")
