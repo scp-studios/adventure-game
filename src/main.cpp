@@ -13,7 +13,7 @@ int main(){
     case 'n':
         break;
     default:
-        std::cout << "Hey listen here, '" << teaChoice << "' isn't a valid choice.\n"
+        std::cout << "Hey listen here, '" << teaChoice << "' isn't a valid choice.\n";
         return 0;
     }
     return 0;
