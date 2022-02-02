@@ -10,3 +10,5 @@ add_executable(
 )
 
 target_precompile_headers("adventure-game" PRIVATE "pch.hpp")
+
+add_subdirectory("b0")
