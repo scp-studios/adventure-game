@@ -3,18 +3,20 @@
 
 void mountainHike()
 {
-    std::cout << "\"So, you don't like tea, I assume?\", said Shiva Jay. \"Yeah\"";
-    std::cout << ", you replied, \"I'm not exactly a fan of tea.\n";
-    std::cout << "\"Very well then.\", said Shiva Jay, \"Then would you like to co";
-    std::cout << "me with me to hike up this mountain?\"\n\n";
+    std::cout << R"NengTheProtagon("So, you don't like tea, eh?" said Shiva Jay.
+    "No, not really", you replied, "I'm not exactly a fan of tea. 
+    "Very well, then. You into hiking?"
+    "Well, not really. I've hiked before, but not much."
+    "Okay. So, would you like to hike up this mountain?"
     
-    std::cout << "Choices:\n";
-    std::cout << "[1]: Hike up the mountain with Shiva Jay.\n";
-    std::cout << "[2]: Decline to hike up the mountain.\n";
-    std::cout << "[3]: Start running away.\n";
-    std::cout << "[4]: Dial 911.\n";
+    Choices:
+    [1]: Hike up the mountain with Shiva Jay.
+    [2]: Say no to hiking up the mountain with Shiva Jay.
+    [3]: Start running away from Shiva Jay.
+    [4]: Dial 911.
+    [*]: Stand still and do nothing.
     
-    std::cout << "\n\nYour Choice: ";
+    Your choice: )NengTheProtagon";
     
     char option;
     std::cin >> option;
