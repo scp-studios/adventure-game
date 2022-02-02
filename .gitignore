@@ -10,6 +10,12 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+# Ninja clutters
+build.ninja
+rules.ninja
+.ninja_deps
+.ninja_log
+
 # Prerequisites
 *.d
 
@@ -42,3 +48,4 @@ _deps
 *.exe
 *.out
 *.app
+/bin/*
