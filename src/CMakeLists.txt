@@ -1,11 +1,14 @@
 add_executable(
     "adventure-game"
     
+    "b0.cpp"
     "main.cpp"
     "utilities.cpp"
     
-    "pch.hpp"
+    "b0.hpp"
+    "main.hpp"
     "messages.hpp"
+    "pch.hpp"
     "utilities.hpp"
 )
 
