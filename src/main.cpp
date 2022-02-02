@@ -31,6 +31,7 @@ int main()
         std::cout << "# Oops! You got poisoned by Shiva Jay.\nYou died.\n";
         return 0;
     case 'n':
+        mountainHike();
         break;
     default:
         std::cout << "# Hey listen here, '" << teaChoice << "' isn't a valid choice.\n";
