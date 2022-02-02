@@ -1,6 +1,21 @@
 #include <iostream>
 #include <string>
 
+void deathByGunshotOnMountain()
+{
+    
+}
+
+void uncertainPlot1()
+{
+    
+}
+
+void gettingChasedByShivaJay()
+{
+    
+}
+
 void mountainHike()
 {
     std::cout << R"NengTheProtagon(
@@ -21,6 +36,23 @@ Your choice: )NengTheProtagon";
 
     char option;
     std::cin >> option;
+    
+    switch (option)
+    {
+    case '1':
+        deathByGunshotOnMountain();
+        break;
+    case '2':
+        uncertainPlot1();
+        break;
+    case '3':
+        gettingChasedByShivaJay();
+        break;
+    case '4':
+        break;
+    default:
+        break;
+    }
 }
 
 int main()
