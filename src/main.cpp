@@ -11,6 +11,10 @@ static void b01();
 
 static void b02();
 
+static void b03();
+
+static void b04();
+
 int main()
 {
     char teaChoice;
@@ -63,9 +67,11 @@ static void b0()
         break;
     case '4':
         // Dial 911
+        b03();
         break;
     default:
         // Stand still and do nothing.
+        b04();
         break;
     }
 }
@@ -108,10 +114,21 @@ static void b00()
 
 static void b01()
 {
-    
+    // So, I'll let you write the conditions for this one, which is when the p-
+    // layer refuses the hike the mountain with Shiva Jay.
 }
 
 static void b02()
 {
-    
+    // This is when the player chooses to run away from Shiva Jay.
+}
+
+static void b03()
+{
+    // This is when the player dials 911.
+}
+
+static void b04()
+{
+    // This is when the player decides to stand still and do nothing.
 }
