@@ -70,4 +70,27 @@ Choices:
 
 Your choice: )NengTheProtagon";
 
+static const std::string_view deathByGunshotOnMountainMainMessage = R"NengTheProtagon(
+# You and Shiva Jay starts walking up the mountain. It wasn't too steep, or at
+# least not so steep that you can't handle it. However, about halfway up the m-
+# ountain, Shiva Jay stopped. "You know, when I used to work in the military, 
+# one of the most important skills was working with a pistol." He then pulls a
+# pistol out of his pockets and points it at you.
+)NengTheProtagon";
+
+static const std::string_view deathByGunshotOnMountainDeathMessage1 = R"NengTheProtagon(
+# Shiva Jay pulls the trigger and fires. You, being a normal human being, was 
+# unable to dodge the bullet and was killed as the bullet penetrated your skull
+# .
+# 
+# In other words, you died from a getting shot by Shiva Jay on a remote mounta-
+# in.
+)NengTheProtagon";
+
+static const std::string_view deathByGunshotOnMountainMessage2 = R"NengTheProtagon(
+# Shiva Jay was about to pull the trigger when he suddenly saw group of securi-
+# ty guards near him. He quickly retracted the gun as the security guards walks
+# by you.
+)NengTheProtagon";
+
 #endif /* E9AAA1F6_E11D_457A_A176_D03F541E3569 */
