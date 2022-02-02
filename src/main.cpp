@@ -3,7 +3,7 @@
 
 int main(){
     char teaChoice;
-    std::cout << "Hello!\nWelcome to this adventure game, jolly fellow. I am Shiva Jay, your guide. Before we start, would you care for a spot of tea? [y/n]\n";
+    std::cout << "Hello!\nWelcome to this adventure game, jolly fellow. I am Shiva Jay, your guide. Before we start, would you care for a spot of tea? [y/n] ";
     std::cin >> teaChoice;
     switch (teaChoice)
     {
