@@ -9,4 +9,4 @@ add_executable(
     "utilities.hpp"
 )
 
-target_precompile_headers("adventure-game" "pch.hpp")
+target_precompile_headers("adventure-game" PRIVATE "pch.hpp")
