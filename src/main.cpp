@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-void mountainHike()
-{
+char mountainHike(){
     std::cout << R"NengTheProtagon(
 # "So, you don't like tea, eh?" said Shiva Jay.
 # "No, not really", you replied, "I'm not exactly a fan of tea. 
@@ -21,6 +20,19 @@ Your choice: )NengTheProtagon";
 
     char option;
     std::cin >> option;
+    switch (option){
+        case '1':
+            break;
+        case '2':
+            break;
+        case '3':
+            break;
+        case '4':
+            break;
+        case '*':
+            break
+        default:
+    }
 }
 
 int main()
