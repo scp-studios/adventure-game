@@ -1,0 +1,14 @@
+$begin_passage
+
+Hello! This is the first test! Very cool!
+
+$end_passage
+
+$begin_options
+
+1%First Option%assets/test2.txt
+2%Second Option%assets/test3.txt
+
+$end_options
+
+prompt%Your Choice
