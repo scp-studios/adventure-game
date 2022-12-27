@@ -1,0 +1,12 @@
+﻿  cmake_pch.cxx
+  b0.cpp
+  main.cpp
+  utilities.cpp
+C:\Users\Yue\Projects\GitHub\adventure-game\src\utilities.cpp(7,35): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  0.cpp
+  1.cpp
+  2.cpp
+  3.cpp
+  4.cpp
+  Generating Code...
+  adventure-game.vcxproj -> C:\Users\Yue\Projects\GitHub\adventure-game\bin\Release\adventure-game.exe

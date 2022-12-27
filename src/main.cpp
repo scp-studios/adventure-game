@@ -74,6 +74,8 @@ int main()
     case 'y':
         // Accept the tea offer made by Shiva Jay
         std::cout << startingDeathMessageOne;
+        std::cin.ignore();
+        std::cin.ignore();
         return 0;
     case 'n':
         // Decline the tea offer made by Shiva Jay

@@ -1,0 +1,10 @@
+^C:\USERS\YUE\PROJECTS\GITHUB\ADVENTURE-GAME\BUILD\CMAKEFILES\5FB15EAC61CE499A77EEEEEB1A2CBFEC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Yue/Projects/GitHub/adventure-game -BC:/Users/Yue/Projects/GitHub/adventure-game/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Yue/Projects/GitHub/adventure-game/build/Adventure Game.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
